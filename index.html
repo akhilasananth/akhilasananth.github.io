@@ -1,69 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My Blog</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+  <title>What have I learned?</title>
+  <link rel="icon" type="image/png" href="blog.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
-    <style>
-		h2 {
-		    color: #6699ff;
-		    font-family: garamond;
-		    font-size: 300%;
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
 
-		}
-	</style>
+  <style>
+  h1 {
+    color: #6699ff;
+    font-family: garamond;
+    font-size: 300%;
+
+  }
+
+  footer{
+    background-color:#6699ff;
+    color: #FFFAFA;
+    font-family: garamond;
+    font-size: 100%;
+    font-weight: bold;
+    position:absolute;
+    bottom:0;
+    width: 1280px;
+    text-align: center;
+    margin: 120px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    width: 20%;
+    height: 20%;
+  }
+
+  .grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 2px;
+    background-color: #6699ff;
+  }
+
+  .buckets li {
+    margin-bottom: 1em;
+    list-style-type: none;
+  }
+
+
+
+
+</style>
 </head>
-<body>
 
-<div class="container">
-    <h2>My Blog</h2>
+<body class="w3-light-grey">
 
-    <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-        <li><a data-toggle="tab" href="#menu1">General</a></li>
-        <li><a data-toggle="tab" href="#menu2">Programming</a></li>
-        <li><a data-toggle="tab" href="#menu3">Book Reviews</a></li>
-    </ul>
+  <!-- w3-content defines a container for fixed size centered content, 
+    and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1400px">
 
-    <div class="tab-content">
+      <!-- Header -->
+      <header class="w3-container w3-center w3-padding-32"> 
+        <h1><b>What have I learned?</b></h1>
+      </header>
 
-        <div id="home" class="tab-pane fade in active">
+      <div class="container">
+
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+          <li><a data-toggle="tab" href="#menu1">Personal Growth</a></li>
+          <li><a data-toggle="tab" href="#menu2">Programming</a></li>
+          <li><a data-toggle="tab" href="#menu3">Book Reviews</a></li>
+        </ul>
+
+        <div class="tab-content">
+
+          <div id="home" class="tab-pane fade in active">
+
             <h3>Hey!🖐</h3>
             <P>
-            	My name is Akhila. I went to school to learn how to be a software engineer, but I am not sure if that defines me. I like writing, solving problems and making music play-lists. I constantly strive to be better at what I do 💁. So, this blog is really an experiment to improve my writing and hopefully it motivates me to learn more about different coding practices, programming languages, algorithms etc. I also want to read more books and write about them. Hopefully my love for writing (or creating) pushes me to read more books. 
+              My name is Akhila. I went to school to learn how to be a software engineer, but I am not sure if that defines me. I like writing, solving problems and making music play-lists. I constantly strive to be better at what I do 💁. So, this blog is really an experiment to improve my writing and hopefully it motivates me to learn more about different coding practices, programming languages, algorithms etc. I also want to read more books and write about them. Hopefully my love for writing (or creating) pushes me to read more books. 
             </P>
             <p>Each tab above describes the category of the blog posts it contains. Hope they turn out to be good reads! 🙂
             </p>
-        </div>
 
-        <div id="menu1" class="tab-pane fade">
+          </div>
+
+          <div id="menu1" class="tab-pane fade">
+            <br>
             <p>
-               Here resides my ramblings on things that I stumble upon or topics that I find interesting
-            </p>
-           
+             Here are some lessons I learnt about self-growth 🙌
+           </p>
+           <br>
+
+           <section class="buckets grid">
+            <ul>
+
+              <!-- Who can you really control? -->
+              <li>
+                <div class="w3-card-4 w3-margin w3-white" style="width: 25%">
+                  <div style="position: relative; text-align: center;color: white;">
+                    <img src="personalGrowth/control.jpg" alt="You" style="width:100%">
+                    <div class="top-right">February 20, 2018</div>
+                  </div>
+
+                  <div class="bucket">
+                    <h3 class="bucket-title" style="font-weight: bold; text-align: center;">Who can you really control?</h3>
+                    <p>You only have control over yourself and your actions..... blah blah blah</p>
+                  </div><!-- .bucket -->
+                </div>
+              </li>
+
+              <!-- Is meal prepping for the week worth it? -->
+              <li>
+                <div class="w3-card-4 w3-margin w3-white" style="width: 25%">
+                  <div style="position: relative; text-align: center;color: white;">
+                    <img src="personalGrowth/mealPrep.jpg" alt="You" style="width:100%">
+                    <div class="top-right">March 20, 2018</div>
+                  </div>
+
+                  <div class="bucket">
+                    <h3 class="bucket-title" style="font-weight: bold; text-align: center;">Is meal prepping for the week worth it?</h3>
+                    <p>Results of a month long experiment meal prepping every weekend</p>
+                  </div><!-- .bucket -->
+                </div>
+              </li>
+
+            </ul>
+          </section><!-- .buckets -->
+
+          
+
         </div>
 
         <div id="menu2" class="tab-pane fade">
-        	<p>
-        		These posts summerize what I have been learning lately
-        	</p>
-        </div>
+         <p>
+          These posts either summerize my coding projects or something interesting that I have stumbled upon and is related to computer science 💻
+        </p>
+      </div>
 
-        <div id="menu3" class="tab-pane fade">
-        	I am trying to get into the habit of reading more books. These are my thoughts on the books that I have successfully finished reading 🤓
-        </div>
+      <div id="menu3" class="tab-pane fade">
+       I am trying to get into the habit of reading more books. These are my thoughts on the books that I have successfully finished reading 🤓
+     </div>
 
-    </div>
-</div>
-
-<script>
-    w3CodeColor();
-</script>
+   </div>
+ </div>
 
 </body>
-</html>    
+</html>
