@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Include</title>
+</head>
+<body>
+    <p id="example_placeholder">Existing content that will be replaced.</p>
+    <input type="button" onclick="example_replace()" value="Replace text" />
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript"> 
+        function example_replace() {
+            $('#include').html('This existing content has been replaced with this content.');
+        }
+
+    </script> 
+</body>
+</html>

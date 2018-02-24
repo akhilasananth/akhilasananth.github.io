@@ -81,10 +81,11 @@
       <div class="container">
 
         <ul class="nav nav-tabs">
-          <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-          <li><a data-toggle="tab" href="#menu1">Personal Growth</a></li>
-          <li><a data-toggle="tab" href="#menu2">Programming</a></li>
-          <li><a data-toggle="tab" href="#menu3">Book Reviews</a></li>
+          <li class="active"><a data-toggle="tab" href="#home">Home 🏠</a></li>
+          <li><a data-toggle="tab" href="#menu1">Personal Growth 🙌</a></li>
+          <li><a data-toggle="tab" href="#menu2">Just Curious 🐿</a></li>
+          <li><a data-toggle="tab" href="#menu3">Technology 🌎</a></li>
+          <li><a data-toggle="tab" href="#menu4">Book Reviews 📚</a></li>
         </ul>
 
         <div class="tab-content">
@@ -103,7 +104,7 @@
           <div id="menu1" class="tab-pane fade">
             <br>
             <p>
-             Here are some lessons I learnt about self-growth 🙌
+             Here are some lessons I learnt about self-growth 
            </p>
            <br>
 
@@ -112,17 +113,19 @@
 
               <!-- Who can you really control? -->
               <li>
-                <div class="w3-card-4 w3-margin w3-white" style="width: 25%">
-                  <div style="position: relative; text-align: center;color: white;">
-                    <img src="personalGrowth/control.jpg" alt="You" style="width:100%">
-                    <div class="top-right">February 20, 2018</div>
-                  </div>
+                <a id = "pgArticle1" href="#">
+                  <div class="w3-card-4 w3-margin w3-white" style="width: 25%">
+                    <div style="position: relative; text-align: center;color: white;">
+                      <img src="personalGrowth/control.jpg" alt="You" style="width:100%">
+                      <div class="top-right">February 20, 2018</div>
+                    </div>
 
-                  <div class="bucket">
-                    <h3 class="bucket-title" style="font-weight: bold; text-align: center;">Who can you really control?</h3>
-                    <p>You only have control over yourself and your actions..... blah blah blah</p>
-                  </div><!-- .bucket -->
-                </div>
+                    <div class="bucket">
+                      <h3 class="bucket-title" style="font-weight: bold; text-align: center;">Who can you really control?</h3>
+                      <p>You only have control over yourself and your actions..... blah blah blah</p>
+                    </div><!-- .bucket -->
+                  </div>
+                </a>
               </li>
 
               <!-- Is meal prepping for the week worth it? -->
@@ -141,24 +144,29 @@
               </li>
 
             </ul>
-          </section><!-- .buckets -->
-
-          
+          </section><!-- .buckets -->    
 
         </div>
 
-        <div id="menu2" class="tab-pane fade">
+        <div id="menu3" class="tab-pane fade">
          <p>
-          These posts either summerize my coding projects or something interesting that I have stumbled upon and is related to computer science 💻
+          These posts either summerize my coding projects or something interesting that I have stumbled upon and is related to computer science.
         </p>
       </div>
 
-      <div id="menu3" class="tab-pane fade">
+      <div id="menu4" class="tab-pane fade">
        I am trying to get into the habit of reading more books. These are my thoughts on the books that I have successfully finished reading 🤓
      </div>
 
    </div>
  </div>
+
+ <script type="text/javascript"> 
+  $("#pgArticle1").click(function(){
+    $(this).hide();
+    $("control.html").show(); 
+  });
+</script> 
 
 </body>
 </html>
