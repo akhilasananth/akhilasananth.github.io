@@ -1,0 +1,11 @@
+---
+import styles from './Welcome.module.css';
+import WhoAmI from './whoami.tsx'; // or wherever it lives
+---
+
+<div class={styles.container}>
+	<h1 class={styles.name}>Akhila Ananth</h1>
+	<h2 class={styles.roleLine}>
+		I am a <span class={styles.typewriter}><WhoAmI client:visible /></span>
+	</h2>
+</div>
