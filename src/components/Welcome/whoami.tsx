@@ -8,7 +8,8 @@ export default function WhoAmI() {
         'Creative',
         'Traveller',
         'Storyteller',
-        'Human'
+        'Runner',
+        'Human',
     ];
 
     useEffect(() => {
