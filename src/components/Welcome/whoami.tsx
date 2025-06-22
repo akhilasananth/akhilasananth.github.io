@@ -3,10 +3,10 @@ import {useEffect, useRef} from 'react';
 export default function WhoAmI() {
     const textRef = useRef<HTMLSpanElement>(null);
     const roles = [
-        'Software Engineer',
         'Creative',
-        'Traveller',
+        'Software Engineer',
         'Storyteller',
+        'Traveller',
         'Runner',
         'Human',
     ];

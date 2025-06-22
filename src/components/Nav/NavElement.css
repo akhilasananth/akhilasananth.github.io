@@ -1,0 +1,39 @@
+
+.shroom-hidden {
+    position: absolute;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.shroom-visible {
+    transform: translateY(-6rem);
+    opacity: 1;
+}
+
+.shroom {
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.shroom img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    pointer-events: none;
+    display: block;
+    margin-bottom: 0;
+}
+
+.shroom p {
+    margin: 0;
+    font-weight: bold;
+    font-family: "American Typewriter";
+    line-height: 1;
+    text-align: center;
+}
