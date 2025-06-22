@@ -1,0 +1,49 @@
+html, body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+body.default-bg {
+    background-image: linear-gradient(
+            30deg,
+            hsl(282deg 43% 91%) 0%,
+            hsl(282deg 44% 92%) 7%,
+            hsl(282deg 44% 94%) 15%,
+            hsl(282deg 44% 95%) 23%,
+            hsl(282deg 44% 97%) 31%,
+            hsl(283deg 44% 98%) 39%,
+            hsl(283deg 44% 99%) 47%,
+            hsl(202deg 61% 99%) 57%,
+            hsl(202deg 61% 98%) 66%,
+            hsl(202deg 61% 96%) 75%,
+            hsl(202deg 61% 95%) 81%,
+            hsl(202deg 61% 93%) 88%,
+            hsl(201deg 61% 92%) 94%,
+            hsl(201deg 61% 90%) 100%
+    );
+}
+
+body.welcome-bg {
+    background: white url("/images/bg.gif") no-repeat center center fixed;
+    background-size: contain;
+}
+
+main.content {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden; /* prevents content from pushing footer out */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 3vh;
+    flex-shrink: 0;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}

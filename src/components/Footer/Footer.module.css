@@ -1,0 +1,13 @@
+.footerContainer {
+    border-top: 2px solid black;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: dimgrey;
+    font-size: x-small;
+}
+

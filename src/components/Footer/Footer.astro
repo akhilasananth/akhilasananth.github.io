@@ -1,3 +1,14 @@
-<div class="container">
-    <p>Background Animation: Li-Anne Dias</p>
+---
+import styles from './Footer.module.css';
+
+type Props = {
+    content?: string,
+}
+
+const {content = ""} = Astro.props
+---
+
+
+<div class={styles.footerContainer}>
+    <p class={styles.footer}>{content}</p>
 </div>

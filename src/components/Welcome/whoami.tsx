@@ -1,10 +1,9 @@
-import { useEffect, useRef } from 'react';
+import {useEffect, useRef} from 'react';
 
 export default function WhoAmI() {
     const textRef = useRef<HTMLSpanElement>(null);
     const roles = [
         'Software Engineer',
-        'Fullstack Developer',
         'Creative',
         'Traveller',
         'Storyteller',

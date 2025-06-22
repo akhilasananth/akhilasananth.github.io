@@ -12,23 +12,26 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 1rem;
+    padding-left: 6vw;
 }
 
 .textWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     background-color: rgba(142, 171, 186, 0.34);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
-    text-align: center;
     border-radius: 12px;
     padding: 2rem;
-    color: #111; /* ensure text remains strong/visible */
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 0 60px 20px rgba(245, 245, 220, 0.3);
+    color: #111;
+    height: 10vh;
 }
 
 .name {
@@ -56,4 +59,36 @@
 @keyframes blink-caret {
     from, to { border-color: transparent; }
     50% { border-color: black; }
+}
+
+.enterWebsite {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    width: 6vw;
+}
+
+.triangle {
+    background-color: rgba(222, 235, 242, 1);
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    filter: blur(2);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: pulse 1s infinite;
+}
+.triangleTwo {
+    left: 40%;
+    background-color: black;
+    animation-delay: 0.1s;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: translate(70px);
+        opacity: 0.7;
+    }
+    50% {
+        transform: translate(100px);
+        opacity: 1;
+    }
 }
