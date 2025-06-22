@@ -1,11 +1,13 @@
 .nav {
     display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: center;
     align-items: center;
-    padding: 6rem;
+    padding: 4rem 2rem;
     font-family: sans-serif;
     font-size: 1rem;
+    box-sizing: border-box;
 }
 
 .nav a {
@@ -14,13 +16,14 @@
     background-size: contain;
     width: 6rem;
     height: 6rem;
-    transition: color 0.3s;
     z-index: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     overflow: hidden;
+    transition: background-image 0.3s ease;
+    flex-shrink: 0;
 }
 
 .nav a:hover {
@@ -28,9 +31,9 @@
 }
 
 .nav a img {
-    width: 60%;
-    height: 60%;
+    width: 70%;
+    height: 70%;
     object-fit: contain;
-    display: block;
     pointer-events: none;
+    display: block;
 }
