@@ -8,21 +8,32 @@ html, body {
 
 body.default-bg {
     background-image: linear-gradient(
-            30deg,
-            hsl(282deg 43% 91%) 0%,
-            hsl(282deg 44% 92%) 7%,
-            hsl(282deg 44% 94%) 15%,
-            hsl(282deg 44% 95%) 23%,
-            hsl(282deg 44% 97%) 31%,
-            hsl(283deg 44% 98%) 39%,
-            hsl(283deg 44% 99%) 47%,
-            hsl(202deg 61% 99%) 57%,
-            hsl(202deg 61% 98%) 66%,
-            hsl(202deg 61% 96%) 75%,
-            hsl(202deg 61% 95%) 81%,
-            hsl(202deg 61% 93%) 88%,
-            hsl(201deg 61% 92%) 94%,
-            hsl(201deg 61% 90%) 100%
+            195deg,
+            hsl(203deg 82% 87%) 0%,
+            hsl(221deg 81% 88%) 24%,
+            hsl(239deg 79% 89%) 39%,
+            hsl(256deg 78% 89%) 50%,
+            hsl(275deg 76% 90%) 58%,
+            hsl(293deg 74% 91%) 65%,
+            hsl(310deg 72% 92%) 71%,
+            hsl(327deg 74% 92%) 76%,
+            hsl(346deg 71% 93%) 80%,
+            hsl(345deg 63% 94%) 83%,
+            hsl(345deg 53% 94%) 86%,
+            hsl(345deg 43% 95%) 89%,
+            hsl(347deg 36% 95%) 91%,
+            hsl(340deg 27% 96%) 93%,
+            hsl(0deg 16% 96%) 95%,
+            hsl(0deg 6% 97%) 96%,
+            hsl(0deg 0% 97%) 97%,
+            hsl(60deg 6% 97%) 98%,
+            hsl(45deg 20% 96%) 99%,
+            hsl(50deg 27% 96%) 100%,
+            hsl(47deg 36% 95%) 100%,
+            hsl(50deg 43% 95%) 100%,
+            hsl(53deg 50% 94%) 100%,
+            hsl(51deg 59% 93%) 100%,
+            hsl(50deg 68% 93%) 100%
     );
 }
 
