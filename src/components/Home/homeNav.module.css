@@ -1,0 +1,48 @@
+.homeNav {
+    display: inline;
+    align-items: start;
+    padding-top: 2rem;
+}
+
+.homeNav a {
+    width: 12rem;
+    height: 12rem;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.homeNav a img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    pointer-events: none;
+    display: block;
+}
+
+.door {
+    width: 8rem;
+    height: 8rem;
+
+}
+
+.door:hover {
+    transform: scale(1.05);
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0) scale(1.05);
+    }
+    25% {
+        transform: translateX(-5px) scale(1.05);
+    }
+    75% {
+        transform: translateX(5px) scale(1.05);
+    }
+}

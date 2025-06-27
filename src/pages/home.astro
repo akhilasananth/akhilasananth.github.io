@@ -1,8 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Nav from "../components/Nav/Nav.astro";
+import Nav from "../components/Nav/Nav";
+
+const currentPagePath = Astro.url.pathname
 ---
 
 <BaseLayout isWelcome={false}>
-    <Nav slot="header"/>
+    <Nav currentPagePath={currentPagePath} slot="header" client:load/>
 </BaseLayout>

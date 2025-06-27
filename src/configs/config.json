@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "tile_backgrounds": {
+      "dark": "/images/nav/darkBg.svg",
+      "light": "/images/nav/lightBg.svg"
+    },
+    "main_images": {
+      "project": "/images/nav/project.png",
+      "blog": "/images/nav/blog.png",
+      "book_reviews": "/images/nav/bookReviews.png",
+      "resume": "/images/nav/resume.png",
+      "creative_corner": "/images/nav/creativeCorner.png"
+    },
+    "home_icons": {
+      "door": "/images/nav/door.png",
+      "home": "/images/nav/home.png"
+    },
+    "pop_up_images": {
+      "powerup_mushroom": "/images/nav/powerupShroom.png",
+      "goomba": "/images/nav/goomba.png"
+    }
+  }
+}
