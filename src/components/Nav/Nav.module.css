@@ -47,6 +47,7 @@
 .navItem {
     position: relative;
     display: inline-block;
+    align-items: center;
 }
 
 

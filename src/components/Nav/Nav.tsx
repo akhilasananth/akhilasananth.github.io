@@ -1,6 +1,6 @@
 import styles from './Nav.module.css';
 import PopOnHoverElement from './PopOnHoverElement';
-import HomeNav from '../Home/HomeNav';
+import HomeNav from '../Home/HomeNav.tsx';
 import configs from '../../configs/config.json'
 import React, {useRef} from "react";
 
@@ -59,7 +59,7 @@ const Nav: React.FC<NavProps> = ({currentPagePath = ''}) => {
 
     return (
         <div className={styles.navContainer}>
-            <div className={styles.navItem}>
+            <div className={styles.navItem} style={{"top": "1rem", "margin-bottom": "1.5rem"}}>
                 <HomeNav isCurrentHome={home.isCurrentHome} ref={home.elementRef}/>
                 <PopOnHoverElement elementRef={home.elementRef} popElementImagePath={goombaImg}
                                    popElementImageAlt={home.label} popLabel={home.label}/>
