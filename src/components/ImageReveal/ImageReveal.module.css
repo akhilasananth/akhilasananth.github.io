@@ -1,0 +1,26 @@
+.imagesContainer {
+    height: auto;
+    width: 30vw;
+    position: relative;
+    overflow: hidden;
+    margin-left: 5rem;
+}
+
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.under {
+    z-index: 1;
+}
+
+.over {
+    z-index: 2;
+    clip-path: inset(0% 0% 0% 0%);
+    transition: clip-path 0.2s ease;
+}

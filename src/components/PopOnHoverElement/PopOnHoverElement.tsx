@@ -4,7 +4,7 @@ import clsx from 'clsx';
 
 // Make any character (like a mushroom) pop out of any element
 interface PopOnHoverElementProps {
-    elementRef?: React.RefObject<HTMLAnchorElement | null>,
+    elementRef?: React.RefObject<HTMLAnchorElement | HTMLDivElement | null>,
     popElementImagePath: string,
     popElementImageAlt: string,
     popLabel: string

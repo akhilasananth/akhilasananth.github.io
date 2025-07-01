@@ -1,0 +1,13 @@
+---
+// Props: { frontmatter: { title, dateUpdated }, Content }
+const {frontmatter, Content} = Astro.props;
+---
+
+<section class="markdown-section">
+    <h1>{frontmatter.title}</h1>
+    <p class="updated">Updated: {frontmatter.dateUpdated}</p>
+
+    <article class="markdown-body">
+        <Content/>
+    </article>
+</section>

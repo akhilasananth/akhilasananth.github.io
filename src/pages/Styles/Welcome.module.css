@@ -9,14 +9,14 @@
 }
 
 .container {
-    height: 100vh;
+    height: 92vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-left: 6vw;
+    padding-left: 3vw;
 }
 
 .textWrapper {
@@ -57,8 +57,12 @@
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: black; }
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
 }
 
 .enterWebsite {
@@ -76,6 +80,7 @@
     height: 100%;
     animation: pulse 1s infinite;
 }
+
 .triangleTwo {
     left: 40%;
     background-color: black;

@@ -26,13 +26,19 @@ body.welcome-bg {
     background-size: contain;
 }
 
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
 main.content {
     flex: 1;
     min-height: 0;
-    overflow: hidden; /* prevents content from pushing footer out */
+    overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
 }
 
 footer {

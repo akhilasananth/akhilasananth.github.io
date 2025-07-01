@@ -1,6 +1,8 @@
 ---
-import Footer from "../components/Footer/Footer.astro";
 import clsx from 'clsx';
+import Nav from '../components/Nav/Nav';
+import HomeNav from "../components/HomeNav/HomeNav";
+import styles from "../../public/styles/layouts.module.css"
 
 type Props = {
     titleAddOn?: string | undefined,
@@ -17,25 +19,31 @@ const {
 const {header, footer} = Astro.slots;
 const className = clsx({'welcome-bg': isWelcome, 'default-bg': !isWelcome});
 const title = `Akhila Ananth${titleAddOn ? `: ${titleAddOn}` : ""}`;
+
+const currentPagePath = Astro.url.pathname
 ---
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width"/>
-    <link rel="stylesheet" href="/styles/layouts.css"/>
+    <link rel="stylesheet" href="/styles/layouts.module.css"/>
     <link rel="icon" type="image/jpeg" href="/images/me_icon.ico"/>
     <title>{title}</title>
 
 </head>
 <body class={className}>
-<header>
+<header class={styles.header}>
+    {!isWelcome ?
+            <HomeNav currentPagePath={currentPagePath} client:load/> : null}
     {header &&
             <slot name="header"/>}
 </header>
 
-<main class="content">
-    <slot/>
+<main class={styles.content}>
+    {!isWelcome ?
+            <Nav client:load/> : null}
+    <slot name="main"/>
 </main>
 
 <footer>

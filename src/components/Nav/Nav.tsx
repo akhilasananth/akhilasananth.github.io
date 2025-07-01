@@ -1,14 +1,10 @@
 import styles from './Nav.module.css';
-import PopOnHoverElement from './PopOnHoverElement';
-import HomeNav from '../Home/HomeNav.tsx';
+import PopOnHoverElement from '../PopOnHoverElement/PopOnHoverElement.tsx';
+import HomeNav from '../HomeNav/HomeNav.tsx';
 import configs from '../../configs/config.json'
 import React, {useRef} from "react";
 
-interface NavProps {
-    currentPagePath: string;
-}
-
-const Nav: React.FC<NavProps> = ({currentPagePath = ''}) => {
+const Nav: React.FC = () => {
     const project = {
         img: configs.nav.main_images.project,
         elementRef: useRef<HTMLAnchorElement | null>(null),
@@ -44,26 +40,11 @@ const Nav: React.FC<NavProps> = ({currentPagePath = ''}) => {
         label: 'Creative Corner'
     }
 
-    const isCurrentHome = currentPagePath === '/home';
-
-    const home = {
-        isCurrentHome,
-        elementRef: useRef<HTMLAnchorElement | null>(null),
-        label: isCurrentHome ? "You're Home" : "Home",
-    };
-
-
     const powerupMushroomImg: string = configs.nav.pop_up_images.powerup_mushroom
-    const goombaImg: string = configs.nav.pop_up_images.goomba
 
 
     return (
         <div className={styles.navContainer}>
-            <div className={styles.navItem} style={{"top": "1rem", "margin-bottom": "1.5rem"}}>
-                <HomeNav isCurrentHome={home.isCurrentHome} ref={home.elementRef}/>
-                <PopOnHoverElement elementRef={home.elementRef} popElementImagePath={goombaImg}
-                                   popElementImageAlt={home.label} popLabel={home.label}/>
-            </div>
             <nav className={styles.nav}>
                 <div className={styles.navItem}>
                     <a ref={project.elementRef} href={project.href}><img src={project.img} alt={project.label}/></a>

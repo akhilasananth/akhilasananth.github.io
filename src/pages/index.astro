@@ -1,10 +1,23 @@
 ---
-import Welcome from '../components/Welcome/Welcome.astro';
 import Footer from "../components/Footer/Footer.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import styles from "./Styles/Welcome.module.css";
+import clsx from "clsx";
+import WhoAmI from "../components/WhoAmI/whoami";
 ---
 
 <BaseLayout isWelcome={true}>
-    <Welcome/>
+    <div class={styles.container} slot="main">
+        <div class={styles.textWrapper}>
+            <h1 class={styles.name}>Akhila Ananth</h1>
+            <h2 class={styles.roleLine}>
+                I am a <span class={styles.typewriter}><WhoAmI client:visible/></span>
+            </h2>
+        </div>
+        <a href="/home" class={styles.enterWebsite}>
+            <div class={styles.triangle}/>
+            <div class={clsx(styles.triangle, styles.triangleTwo)}/>
+        </a>
+    </div>
     <Footer content="Background Animation by Li-Anne Dias" slot="footer"/>
 </BaseLayout>
