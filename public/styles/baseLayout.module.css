@@ -26,6 +26,10 @@ body.welcome-bg {
     background-size: contain;
 }
 
+.titleWrapper {
+    padding-left: 6rem;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -36,9 +40,34 @@ body.welcome-bg {
 main.content {
     flex: 1;
     min-height: 0;
-    overflow: hidden;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+.navWrapper {
+    flex-shrink: 0;
+    min-width: 200px;
+    max-width: 100%;
+}
+
+.contentWrapper {
+    flex-grow: 1;
+    min-width: 0;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.contentWrapper > * {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 footer {

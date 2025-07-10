@@ -1,20 +1,16 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseLayout from "../layouts/BaseLayout/BaseLayout.astro";
 import Footer from "../components/Footer/Footer.astro";
-import About from "../assets/about.md";
 import styles from "./Styles/Home.module.css";
+import About from "../components/About/About.astro";
 import ImageReveal from "../components/ImageReveal/ImageReveal";
 ---
+<!--TODO: refactor styles to classes-->
 
 <BaseLayout isWelcome={false}>
-    <h1 slot="header" style={{"padding-left": "4.5rem"}}>~$ whoami</h1>
+    <h1 slot="header">~$ whoami</h1>
     <div class={styles.main} slot="main">
-        <div style={{"display": "flex", "alignItems": "center", "flexDirection": "column"}}>
-            <div id="markdown-container" class={styles.textContainer}>
-                <About/>
-            </div>
-            <span class={styles.scrollDownText}> Scroll Down </span>
-        </div>
+        <About/>
         <ImageReveal selector="#markdown-container" underImgPath="/images/about/me.png"
                      overImgPath="images/about/ghibli_me.png" client:load/>
     </div>

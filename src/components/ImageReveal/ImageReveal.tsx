@@ -19,10 +19,12 @@ const ImageReveal: React.FC<ImageRevealProps> = ({selector, underImgPath, overIm
 
         const handleScroll = () => {
             const scrollTop = mdElementNode.scrollTop;
-            const scrollHeight = mdElementNode.scrollHeight - mdElementNode.clientHeight;
-            const progress = scrollTop / scrollHeight;
+            const scrollRange = mdElementNode.scrollHeight - mdElementNode.clientHeight;
+            const progress = scrollRange > 0 ? scrollTop / scrollRange : 0;
 
-            const clipPercent = Math.min(progress * 200, 200);
+
+            const clipPercent = Math.min(progress * 100, 100);
+
             overImgNode.style.clipPath = `inset(${clipPercent}% 0% 0% 0%)`;
             overImgNode.style.opacity = Math.min(1 - progress * 0.5, 1).toString();
         };

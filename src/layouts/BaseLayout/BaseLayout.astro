@@ -1,8 +1,8 @@
 ---
 import clsx from 'clsx';
-import Nav from '../components/Nav/Nav';
-import HomeNav from "../components/HomeNav/HomeNav";
-import styles from "../../public/styles/layouts.module.css"
+import Nav from '../../components/Nav/Nav';
+import HomeNav from "../../components/HomeNav/HomeNav";
+import styles from "../../../public/styles/baseLayout.module.css"
 
 type Props = {
     titleAddOn?: string | undefined,
@@ -27,25 +27,34 @@ const currentPagePath = Astro.url.pathname
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width"/>
-    <link rel="stylesheet" href="/styles/layouts.module.css"/>
+    <link rel="stylesheet" href="/styles/baseLayout.module.css"/>
     <link rel="icon" type="image/jpeg" href="/images/me_icon.ico"/>
     <title>{title}</title>
 
 </head>
 <body class={className}>
 <header class={styles.header}>
-    {!isWelcome ?
-            <HomeNav currentPagePath={currentPagePath} client:load/> : null}
+    {!isWelcome && (
+            <HomeNav currentPagePath={currentPagePath} client:load/>
+    )}
     {header &&
-            <slot name="header"/>}
+            <div class={styles.titleWrapper}>
+                <slot name="header"/>
+            </div>
+    }
 </header>
 
 <main class={styles.content}>
-    {!isWelcome ?
-            <Nav client:load/> : null}
-    <slot name="main"/>
-</main>
+    {!isWelcome && (
+            <div class={styles.navWrapper}>
+                <Nav client:load/>
+            </div>
 
+    )}
+    <div class={styles.contentWrapper}>
+        <slot name="main"/>
+    </div>
+</main>
 <footer>
     {footer &&
             <slot name="footer"/>}

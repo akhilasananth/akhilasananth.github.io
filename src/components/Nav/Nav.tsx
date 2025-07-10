@@ -1,6 +1,5 @@
 import styles from './Nav.module.css';
 import PopOnHoverElement from '../PopOnHoverElement/PopOnHoverElement.tsx';
-import HomeNav from '../HomeNav/HomeNav.tsx';
 import configs from '../../configs/config.json'
 import React, {useRef} from "react";
 
