@@ -6,6 +6,8 @@
 }
 
 .textContainer {
+    font-family: 'Work Sans', 'Segoe UI', Roboto, Arial, sans-serif;
+    line-height: 1.6;
     height: 70vh;
     width: 45vw;
     overflow-x: hidden;
