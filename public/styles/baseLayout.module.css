@@ -48,6 +48,8 @@ main.content {
 
 
 .navWrapper {
+    display: flex;
+    align-items: center;
     flex-shrink: 0;
     min-width: 200px;
     max-width: 100%;

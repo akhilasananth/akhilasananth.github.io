@@ -5,9 +5,8 @@ import styles from "./Styles/Home.module.css";
 import About from "../components/About/About.astro";
 import ImageReveal from "../components/ImageReveal/ImageReveal";
 ---
-<!--TODO: refactor styles to classes-->
 
-<BaseLayout isWelcome={false}>
+<BaseLayout>
     <h1 slot="header">~$ whoami</h1>
     <div class={styles.main} slot="main">
         <About/>

@@ -18,13 +18,6 @@ const Nav: React.FC = () => {
         label: 'Resume'
     }
 
-    const bookReviews = {
-        img: configs.nav.main_images.book_reviews,
-        elementRef: useRef<HTMLAnchorElement | null>(null),
-        href: '/book-reviews',
-        label: 'Book Reviews'
-    }
-
     const blog = {
         img: configs.nav.main_images.blog,
         elementRef: useRef<HTMLAnchorElement | null>(null),
@@ -55,13 +48,6 @@ const Nav: React.FC = () => {
                     <a ref={resume.elementRef} href={resume.href}><img src={resume.img} alt={resume.label}/></a>
                     <PopOnHoverElement elementRef={resume.elementRef} popElementImagePath={powerupMushroomImg}
                                        popElementImageAlt={resume.label} popLabel={resume.label}/>
-                </div>
-
-                <div className={styles.navItem}>
-                    <a ref={bookReviews.elementRef} href={bookReviews.href}><img src={bookReviews.img}
-                                                                                 alt={bookReviews.label}/></a>
-                    <PopOnHoverElement elementRef={bookReviews.elementRef} popElementImagePath={powerupMushroomImg}
-                                       popElementImageAlt={bookReviews.label} popLabel={bookReviews.label}/>
                 </div>
 
                 <div className={styles.navItem}>

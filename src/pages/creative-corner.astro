@@ -1,0 +1,10 @@
+---
+import ImageReveal from "../components/ImageReveal/ImageReveal";
+import About from "../components/About/About.astro";
+import Footer from "../components/Footer/Footer.astro";
+import BaseLayout from "../layouts/BaseLayout/BaseLayout.astro";
+---
+<BaseLayout isWelcome={false}>
+    <h1 slot="header">No Rules!</h1>
+    <Footer content="Built with Astro and React.js. Deployed using GitHub Pages." slot="footer"/>
+</BaseLayout>

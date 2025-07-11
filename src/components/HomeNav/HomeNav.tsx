@@ -24,8 +24,10 @@ const HomeNav: React.FC<HomeNavProps> = ({currentPagePath = '/'}) => {
                 {isCurrentHome ? <img className={styles.door} src="/images/nav/door.png"/>
                     : <a href="/home"><img src="/images/nav/home.png"/></a>}
             </div>
-            <PopOnHoverElement elementRef={home.elementRef} popElementImagePath={goombaImg}
-                               popElementImageAlt={home.label} popLabel={home.label}/>
+            {isCurrentHome && (
+                <PopOnHoverElement elementRef={home.elementRef} popElementImagePath={goombaImg}
+                                   popElementImageAlt={home.label} popLabel={home.label}/>
+            )}
         </div>
 
     )
