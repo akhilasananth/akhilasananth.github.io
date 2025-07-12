@@ -3,22 +3,18 @@
     align-items: start;
 }
 
-.homeNav a {
-    width: 12rem;
-    height: 12rem;
-    z-index: 0;
-    display: flex;
-    position: relative;
-    overflow: hidden;
-    flex-shrink: 0;
+.navItem {
+
 }
 
-.homeNav a img {
-    width: 70%;
-    height: 70%;
-    object-fit: contain;
-    pointer-events: none;
-    display: block;
+.homeImg {
+    width: 8rem;
+    height: 8rem;
+}
+
+.homeImg:hover {
+    transform: scale(1.1);
+    transition: all ease 500ms;
 }
 
 .door {

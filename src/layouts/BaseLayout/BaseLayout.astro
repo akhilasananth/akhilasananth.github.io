@@ -30,9 +30,9 @@ const currentPagePath = Astro.url.pathname
     <link rel="stylesheet" href="/styles/baseLayout.module.css"/>
     <link rel="icon" type="image/jpeg" href="/images/me_icon.ico"/>
     <title>{title}</title>
-
 </head>
 <body class={className}>
+
 <header class={styles.header}>
     {!isWelcome && (
             <HomeNav currentPagePath={currentPagePath} client:load/>

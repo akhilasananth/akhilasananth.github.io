@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Keania+One&display=swap');
+
 .shroomHidden {
     position: absolute;
     opacity: 0;
@@ -32,9 +34,8 @@
 }
 
 .label {
-    margin: 0;
+    margin-top: 0.2rem;
     font-weight: bold;
-    font-family: "American Typewriter";
-    line-height: 1;
+    font-family: "Keania One", sans-serif;
     text-align: center;
 }

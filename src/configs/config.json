@@ -17,7 +17,8 @@
     },
     "pop_up_images": {
       "powerup_mushroom": "/images/nav/powerupShroom.png",
-      "goomba": "/images/nav/goomba.png"
+      "goomba": "/images/nav/goomba.png",
+      "peach": "/images/nav/peach.png"
     }
   }
 }

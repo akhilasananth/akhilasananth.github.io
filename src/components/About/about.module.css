@@ -12,10 +12,14 @@
     width: 45vw;
     overflow-x: hidden;
     overflow-y: auto;
+    border-radius: 12px;
+    backdrop-filter: brightness(120%);
+    box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.14), 0 1px 2px rgba(0, 0, 0, 0.12);
+    padding: 1rem;
 }
 
-.scrollDownLabel {
 
+.scrollDownLabel {
     display: inline-block;
     padding: 0.5rem 1rem;
 
@@ -35,16 +39,23 @@
 .textContainer::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    background-color: hsl(162deg 23% 70%);
+    background-color: hsl(68deg 9% 33%);
 }
 
 .textContainer::-webkit-scrollbar {
     width: 12px;
-    background-color: hsl(162deg 24% 68%);
+    background-color: hsl(68deg 9% 33%);
 }
 
 .textContainer::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-    background-color: #888888;
+    background-color: hsl(68deg 9% 25%);
+}
+
+.background {
+    background-image: url(https://images.unsplash.com/photo-1506792006437-256b665541e2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=a11f62b7cd53ae9f3da9bd12b555ae65);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }

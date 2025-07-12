@@ -7,7 +7,8 @@ interface PopOnHoverElementProps {
     elementRef?: React.RefObject<HTMLAnchorElement | HTMLDivElement | null>,
     popElementImagePath: string,
     popElementImageAlt: string,
-    popLabel: string
+    popLabel: string,
+    popDistance?: string | null
 }
 
 const PopOnHoverElement: React.FC<PopOnHoverElementProps> = (
@@ -15,10 +16,16 @@ const PopOnHoverElement: React.FC<PopOnHoverElementProps> = (
         elementRef,
         popElementImagePath,
         popElementImageAlt = '',
-        popLabel = ''
+        popLabel = '',
+        popDistance = null
     }) => {
 
     const popElement = useRef<HTMLDivElement>(null)
+
+    if (popDistance && !popDistance.includes('rem')) {
+        throw new Error('popDistance or the translation distance must have rem');
+    }
+
 
     useEffect(() => {
         const elementNode = elementRef?.current;
@@ -27,12 +34,17 @@ const PopOnHoverElement: React.FC<PopOnHoverElementProps> = (
         if (!elementNode || !popElementNode) return;
 
         const onMouseEnter = () => {
-            console.log("Here shroom should pop out");
             popElementNode.classList.add(styles.shroomVisible);
+            if (popDistance) {
+                popElementNode.style.transform = `translateX(${popDistance})`
+            }
         };
 
         const onMouseLeave = () => {
             popElementNode.classList.remove(styles.shroomVisible);
+            if (popDistance) {
+                popElementNode.style.transform = ''
+            }
         };
 
         elementNode.addEventListener("mouseenter", onMouseEnter);

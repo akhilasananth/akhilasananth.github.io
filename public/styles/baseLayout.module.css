@@ -8,16 +8,20 @@ html, body {
 
 body.default-bg {
     background-image: linear-gradient(
-            215deg,
-            hsl(162deg 28% 57%) 0%,
-            hsl(162deg 27% 59%) 22%,
-            hsl(162deg 26% 61%) 33%,
-            hsl(162deg 26% 64%) 42%,
-            hsl(162deg 25% 66%) 50%,
-            hsl(162deg 24% 68%) 58%,
-            hsl(162deg 23% 70%) 67%,
-            hsl(162deg 22% 72%) 78%,
-            hsl(162deg 21% 75%) 100%
+            45deg,
+            hsl(27deg 22% 54%) 0%,
+            hsl(30deg 19% 51%) 18%,
+            hsl(32deg 18% 49%) 26%,
+            hsl(35deg 17% 46%) 33%,
+            hsl(38deg 16% 44%) 39%,
+            hsl(42deg 15% 42%) 44%,
+            hsl(45deg 13% 40%) 50%,
+            hsl(50deg 12% 38%) 56%,
+            hsl(55deg 11% 36%) 61%,
+            hsl(61deg 9% 34%) 67%,
+            hsl(68deg 9% 33%) 74%,
+            hsl(75deg 8% 31%) 82%,
+            hsl(82deg 7% 30%) 100%
     );
 }
 
@@ -34,7 +38,7 @@ body.welcome-bg {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    align-items: center;
+    align-items: start;
 }
 
 main.content {
@@ -79,3 +83,4 @@ footer {
     padding: 1rem;
     font-size: 0.9rem;
 }
+

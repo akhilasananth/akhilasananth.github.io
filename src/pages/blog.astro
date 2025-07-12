@@ -1,9 +1,8 @@
 ---
 import Footer from "../components/Footer/Footer.astro";
 import BaseLayout from "../layouts/BaseLayout/BaseLayout.astro";
-import CCTitle from "../components/CreativeCornerTitle/CCTitle";
 ---
 <BaseLayout isWelcome={false}>
-    <CCTitle slot="header" client:load/>
+    <h1 slot="header">Blog</h1>
     <Footer content="Built with Astro and React.js. Deployed using GitHub Pages." slot="footer"/>
 </BaseLayout>
