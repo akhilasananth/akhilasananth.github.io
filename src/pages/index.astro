@@ -1,0 +1,29 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import {SITE_DESCRIPTION, SITE_TITLE} from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}/>
+</head>
+<body>
+<Header/>
+<main>
+    <h1>AKHILA ANANTH.</h1>
+    <p>
+        Akhila Ananth is a software engineer and an artist. This website is dedicated to the art of building software.
+        Here you’ll find her résumé and her thoughts on technology and working in the industry.
+    </p>
+    <div class="links">
+        <a>Résumé</a>
+        <a>Contact Akhila</a>
+    </div>
+
+</main>
+<Footer/>
+</body>
+</html>
