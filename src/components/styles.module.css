@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --font-family: "Ubuntu Mono", monospace;
+    --font-size: 1.2rem
+}
+
+.siteTitle {
+    font-family: "Megrim", system-ui;
+    font-weight: bold;
+    font-style: normal;
+}
+
+header {
+    margin: 0;
+    padding: 0 1em;
+    background: white;
+    box-shadow: 0 2px 8px rgba(var(--black), 5%);
+}
+
+h2 {
+    margin: 0;
+    font-size: 1em;
+}
+
+h2 a,
+h2 a.active {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    color: var(--black);
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+}
+
+nav a.active {
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+.links a {
+    background: #fff;
+    color: #111275;
+    border: 2px solid #000000;
+    display: inline-block;
+    border-radius: 1rem;
+    padding-top: 0.25rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    font-size: var(--font-size);
+    font-family: var(--font-family), sans-serif;
+    font-style: normal;
+}
+
+.links a:hover {
+    background-color: #111275;
+    color: white;
+}
+
+
+@media (max-width: 720px) {
+    .links {
+        display: none;
+    }
+}
+
+/* Hide default links on mobile */
+@media screen and (max-width: 768px) {
+    .links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        background: #fff;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: calc(var(--font-size) * 2);
+        font-family: var(--font-family), sans-serif
+    }
+
+    /* Show menu when the 'active' class is added */
+    .links.active {
+        display: flex;
+    }
+}
